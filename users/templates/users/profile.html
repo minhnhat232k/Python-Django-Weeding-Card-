@@ -1,0 +1,37 @@
+{% extends "pages/base.html" %} {% block content %}
+
+<link rel="stylesheet" href="../../static/css/profile.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+<div class="wrapper">
+  <div class="left">
+    <img class="rounded-circle account-img" alt="" src="{{ user.profile.image.url }}" width="100"/>
+    <h4>{{ user.username }}</h4>
+    <p>{{ user.email }}</p>
+
+  </div>
+  <div class="right">
+    <div class="info">
+      <h3>Profile Info</h3>
+      <div class="info_data">
+               <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %}
+          <fieldset class="form-group">
+              <legend class="border-bottom mb-4">Profile Info</legend>
+              {{ u_form }}
+              {{ p_form }}
+          </fieldset>
+          <div class="form-group">
+              <button class="btn btn-outline-info" type="submit">Update</button>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+{% endblock content %}
+hiểu hông?
+
+/cái mục hình ảnh lwox tay xóa mất r

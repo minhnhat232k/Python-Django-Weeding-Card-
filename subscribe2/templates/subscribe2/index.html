@@ -1,0 +1,76 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../static/css/subcribe2.css">
+    <title>Thiep1</title>
+</head>
+<body>
+    <form method="get" accept-charset="utf-8" id="formDemo">
+        <fieldset class="row">
+            <div class="column">
+                <img id="img2" src="../../static/image/wddo.png"><br>
+                <img id="img" src="../../static/image/purple love.png"><br>
+                <input class="time_trai" name="ntn" type="text" placeholder="Ngày-Tháng-Năm"><br>
+                <input class="time_trai" name="gio" type="text" placeholder="Giờ">
+            </div>
+            <div class="column">
+                <h1>Trân Trọng Kính Mời Quý Khách</h1>
+                <input class="input_form_time" name="tenkhach" type="text">
+                <p id="ddbt">Đến dự bữa tiệc thân mật chung vui cùng gia đình chúng tôi</p>
+                <input class="input_form_time" id="tenchure" type="text" placeholder="Chú rể" >
+                <img id="imgphai" src="../../static/image/traitym.png">
+                <input class="input_form_time" id="tencodau" type="text" placeholder="Cô dâu"><br>
+                <center><table>
+                    <tr>
+                        <td></td>
+                        <td colspan="2"><input class="time" name="thang" type="text" placeholder="Tháng"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><input class="input_form_time" name="gio" type="text" placeholder="Giờ"></td>
+                        <td rowspan="2"><input id="ngay" name="ngay" type="text" placeholder="Ngày"></td>
+                        <td colspan="1"><input class="input_form_time" name="ngay" type="text" placeholder="Tức Ngày"></td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="1"><input class="input_form_time" name="thu" type="text" placeholder="Thứ"></td>
+                        <td colspan="1"><input class="input_form_time" name="nam" type="text" placeholder="(Năm Âm)"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="3"><input class="time" name="nam" type="text" placeholder="Năm Dương"></td>
+                        <td></td>
+                    </tr>
+                </table></center>
+                <label>Tại :</label>
+                <input class="input_form_time" name="diadiem" type="text"><br>
+                <input class="input_form_time" name="diachi" type="text" placeholder="Địa Chỉ">
+                <p id="shd"> Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi! </p>
+
+                <div class="row1">
+                    <div class="column1">
+                        <label>Nhà Trai</label><br>
+                        <label>Ông:</label>
+                        <input class="input_form_time" name="tenbachure" type="text"><br>
+                        <label>Bà: </label>
+                        <input class="input_form_time" name="tenbachure" type="text"><br>
+                    </div>
+                    <div class="column1">
+                        <label>Nhà Gái</label><br>
+                        <label>Ông :</label>
+                        <input class="input_form_time" name="tenbacodau" type="text"><br>
+                        <label>Bà :</label>
+                        <input class="input_form_time" name="tenmecodau" type="text"> <br>
+                    </div>
+                </div>
+        </fieldset>
+
+    </form>
+    <center><input id="submit" type="submit" value="Gửi"></center>
+
+</body>
+</html>

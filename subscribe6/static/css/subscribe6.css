@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+
+.row{
+    display: flex;
+    text-align: center;
+    background-image: url(img/nenphai.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.column, .column1{
+    flex: 50;
+    border: 3px dashed rgb(232, 179, 243);
+    margin: 10px;
+    height: 700px;
+    padding-bottom: 5px;
+    position: relative;
+    border-radius: 15px;
+}
+.column{
+    position: relative;
+    background: linear-gradient(rgb(250, 141, 133),rgb(252, 251, 250));
+}
+
+#cottrai{
+    position: relative;
+    z-index: 5;
+    margin-top: 100px;
+}
+.column1{
+    position: relative;
+    background: linear-gradient(rgb(250, 141, 133),rgb(252, 251, 250));
+
+}
+#cotphai{
+    z-index: 5;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+.input_form, .input_form_time{
+    font-family: 'Lobster Two', cursive;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    border-style: none;
+    outline-style: none;
+    border-bottom: 2px inset rgb(73, 189, 243);
+    background: none;
+    color: rgb(187, 78, 5);
+}
+.input_form_time{
+    width: 75px;
+}
+#submit{
+    position: relative;
+    width: 8%;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(247, 76, 54);
+    display: inline;
+    margin-top: 20px;
+}#hoatrai{
+    width: 85%;
+    height: 250px;
+    position: absolute;
+    z-index: 2 ;
+    right: 10%;
+    top: 450px;
+
+}
+#hoaphai{
+    width: 85%;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+    top: 450px;
+}
+#trai, #phai{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    z-index: 2 ;
+    right: 0;
+}
+label{
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    color: rgb(80, 11, 11);
+}
+.km{
+    font-family: 'Parisienne', cursive;
+    font-size: 25px;
+    color: blue;
+}
+#tencodau, #tenchure{
+    font-family: 'Tangerine', cursive;
+    font-size: 45px;
+    color: rgb(250, 56, 56);
+    width: 350px;
+}
+.thep{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 25px;
+    color: rgb(141, 27, 50);
+}

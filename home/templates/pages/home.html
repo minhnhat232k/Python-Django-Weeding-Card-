@@ -1,0 +1,20 @@
+{% extends "pages/base.html" %}
+{%block title %}Home{% endblock  %}
+{% block content %}
+    <link rel="stylesheet" href="../../static/css/home.css" type = "text/css">
+            <div class="container_home">
+                <div class="row">
+                    <div class="col-2">
+                        <h1>You should always<br> feel great</h1>
+                        <p id="duoi">With the whole world crumbling, we pick this time to fall in love!</p>
+                        <a href="{% url 'review' %}" class="btn">Best 2021 &#10174;</a>
+                    </div>
+                    <div class="col-2">
+                        <img src="../../static/images/hinhcuoi.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+{% endblock content %}

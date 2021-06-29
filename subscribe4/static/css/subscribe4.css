@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+
+
+.row{
+    display: flex;
+    text-align: center;
+    background: rgb(238, 231, 228);
+}
+.column{
+    flex: 50;
+    border: 3px dashed rgb(232, 179, 243);
+    margin: 10px;
+    height: 700px;
+    padding-bottom: 5px;
+    position: relative;
+    border-radius: 15px;
+    background-image: url(../../static/image/nen.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.row1{
+    display: flex;
+}
+.column1{
+    flex: 50;
+}
+#cottrai{
+    margin-top: 190px;
+}
+#cotphai{
+    margin-top: 20px;
+}
+#hoatrai{
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    right: 0%;
+}
+#hoaphai{
+    width: 150px;
+    height: 150px;
+}
+.input_form, .input_form_time{
+    width: 200px;
+    text-align: center;
+    font-family: 'Reggae One', cursive;
+    font-size: 20px;
+    line-height: 30px;
+    border-style: none;
+    outline-style: none;
+    border-bottom: 2px inset rgb(73, 189, 243);
+    background: none;
+    color: rgb(36, 92, 197);
+}
+.input_form_time{
+    width: 75px;
+}
+#submit{
+    position: relative;
+    width: 8%;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(247, 174, 231);
+    display: inline;
+    margin-top: 20px;
+}
+.thep{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: rgb(8, 143, 143);
+}
+label{
+    font-family: 'Reggae One', cursive;
+    font-size: 20px;
+}
+.km{
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+    color: rgba(117, 1, 121, 0.993);
+}
+#tencodau, #tenchure{
+    width: 350px;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 45px;
+    color: rgb(246, 86, 252);
+}

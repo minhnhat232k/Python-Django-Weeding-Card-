@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../static/css/login_register.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <legend>Đăng Ký</legend>
+        <form class="form" action="." method="POST">
+                {% csrf_token %}
+                <div class="input-field">
+                        <input type="text" required name="username">
+                        <label>Username</label>
+                </div>
+                <div class="input-field">
+                        <input type="text" required name="email">
+                        <label>Email</label>
+                </div>
+                <div class="input-field">
+                        <input type="password" required name="password1">
+                        <label>Password</label>
+                </div>
+                <div class="input-field">
+                        <input type="password" required name="password2">
+                        <label>Confirm Password</label>
+                </div>
+                <div class="button">
+                        <div class="inner">
+                        </div>
+                        <button type="submit" name='next' value="/subscribe/" class="btn">Đăng Ký</button>
+                </div>
+
+            </form>
+        <p class="login-register-text">Have an account? <a href="../login">Login Here</a>.</p>
+    </div>
+</body>
+</html>

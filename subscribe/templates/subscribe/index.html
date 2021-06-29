@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% comment %} <link type="text/css" rel="stylesheet" href="./style.css" /> {% endcomment %}
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sail&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+      #hhdt {
+        font-family: "Dancing Script", cursive;
+        color: rgb(114, 82, 230);
+        font-size: 30px;
+      }
+
+      #ten {
+        font-family: "Sail";
+        text-align: center;
+        color: #d31e3c;
+        font-size: 30px;
+      }
+
+      body {
+        font-family: Pacifico;
+        font-size: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 25px;
+        font-family: Sail;
+        color: rgb(184, 3, 3);
+      }
+
+      .form {
+        border-color: lightcoral;
+        border-radius: 40px;
+        box-shadow: lightgrey 5px 5px 5px 5px;
+        text-align: center;
+        width: 95%;
+      }
+
+      input[type="text"],
+      [type="email"] {
+        font-family: "Original Surfer";
+        font-size: 20px;
+        text-align: center;
+        color: rgb(75, 7, 95);
+        font-style: bold;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #00bcd4;
+        outline-style: none;
+      }
+      input[name="diadiem"] {
+        font-size: 35px;
+        font-family: Satisfy;
+      }
+
+      #div1 {
+        background: none;
+        line-height: 35px;
+        border: 3px dashed rgb(243, 106, 106);
+        padding: 20px;
+        float: left;
+        width: 45%;
+        padding-bottom: 55px;
+      }
+
+      #tenchure,
+      #tencodau {
+        margin-top: 5px;
+        font-family: Sail;
+        color: #eb6a6a;
+        text-align: center;
+        font-size: 40px;
+      }
+
+      #Nha_trai {
+        text-align: left;
+        float: left;
+        padding-left: 30px;
+      }
+      #Nha_gai {
+        text-align: left;
+        float: right;
+        padding-right: 30px;
+      }
+      .input_form_time {
+        width: 50px;
+      }
+
+      #div2 {
+        background: none;
+        width: 45%;
+        border: 3px dashed rgb(243, 106, 106);
+        float: right;
+      }
+      #imgg {
+        width: 100px;
+        height: 100px;
+      }
+
+      #img {
+        margin: 10px;
+        width: 200px;
+        height: 150px;
+      }
+
+      #img2 {
+        width: 600px;
+        height: 400px;
+      }
+
+      #imgtrentrai,
+      #imgphaiduoi {
+        position: absolute;
+
+        width: 400px;
+        height: 400px;
+      }
+
+      #imgtrentrai {
+        z-index: 2;
+        top: 0;
+        right: 0%;
+      }
+
+      #imgphaiduoi {
+        z-index: 0;
+        top: 700px;
+      }
+
+      #div22 {
+        margin-top: 50px;
+        line-height: 40px;
+      }
+
+      #submit {
+        font-family: "Freckle Face";
+        font-size: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: rgb(252, 119, 119);
+        display: inline;
+        margin-left: 30px;
+        margin-top: 20px;
+      }
+      #submit:hover {
+        background: linear-gradient(to right, #fc466b, #7dc7f8);
+      }
+
+      #formDemo {
+        top: 10px;
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      id="imgtrentrai"
+      src="https://tiendung352001.000webhostapp.com/web/buom1.png"
+    />
+    {% comment %}
+    <form method="get" accept-charset="utf-8" id="formDemo">
+      <fieldset class="form">
+        <div id="div1">
+          <h1>Trân Trọng Kính Mời Quý Khách</h1>
+          <input class="input_form" name="tenkhach" type="text" />
+          <p>Đến dự bữa tiệc thân mật chung vui cùng gia đình chúng tôi</p>
+          <label>Email người nhận :</label>
+          <input class="input_form" name="email" type="email" /><br />
+          <input
+            class="input_form"
+            id="tenchure"
+            type="text"
+            placeholder="Chú rể"
+          />
+          <p>
+            <img
+              id="imgg"
+              src="https://tiendung352001.000webhostapp.com/web/love%20text.png"
+            />
+          </p>
+          <input
+            class="input_form"
+            id="tencodau"
+            type="text"
+            placeholder="Cô dâu"
+          /><br />
+          <label>Được tổ chức vào hồi :</label>
+          <input class="input_form_time" name="thoigian" type="text" /><br />
+          <label>Ngày</label>
+          <input class="input_form_time" name="ngay" type="text" />
+          <label>Tháng</label>
+          <input class="input_form_time" name="thang" type="text" />
+          <label>Năm</label>
+          <input class="input_form_time" name="nam" type="text" /><br />
+          <label>Tại :</label>
+          <input class="input_form" name="diadiem" type="text" />
+          <p id="hhdt">
+            Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi!
+          </p>
+
+          <div id="Nha_trai">
+            <center>Nhà Trai</center>
+            <label>Ông:</label>
+            <input class="input_form" name="tenbachure" type="text" /><br />
+            <label>Bà: </label>
+            <input class="input_form" name="tenbachure" type="text" /><br />
+            <center>
+              <label> Chú rể</label> <br />
+              <input
+                class="input_form"
+                id="ten"
+                type="text"
+                placeholder="Chú rể"
+              />
+            </center>
+            <label>Đ/c: </label>
+            <input class="input_form" name="tenchure" type="text" />
+          </div>
+          <div id="Nha_gai">
+            <center>Nhà Gái</center>
+
+            <label>Ông :</label>
+            <input class="input_form" name="tenbacodau" type="text" /><br />
+            <label>Bà :</label>
+            <input class="input_form" name="tenmecodau" type="text" /> <br />
+            <center>
+              <label> Cô dâu</label> <br />
+              <input
+                class="input_form"
+                id="ten"
+                type="text"
+                placeholder="Cô dâu"
+              />
+            </center>
+            <label>Đ/c: </label>
+            <input class="input_form" name="tenchure" type="text" />
+            <p></p>
+          </div>
+        </div>
+        <div id="div2">
+          <br />
+          <img
+            id="img"
+            src="https://tiendung352001.000webhostapp.com/web/wedding.png"
+          /><br />
+          <img
+            id="img2"
+            src="https://tiendung352001.000webhostapp.com/web/alo.jpg"
+          />
+          <div id="div22">
+            <h1 style="font-size: 30px">Lễ Thành Hôn</h1>
+            <label>Được tổ chức vào hồi :</label>
+            <input class="input_form_time" name="thoigian" type="text" /><br />
+            <label>Thứ</label>
+            <input class="input_form_time" name="thu" type="text" />
+            <label>Ngày</label>
+            <input class="input_form_time" name="ngay" type="text" />
+            <label>Tháng</label>
+            <input class="input_form_time" name="thang" type="text" />
+            <label>Năm</label>
+            <input class="input_form_time" name="nam" type="text" /><br />
+            <label>Tại :</label><br />
+            <input class="input_form" name="diadiem" type="text" />
+            <p id="hhdt">Rất Hân Hạnh Được Đón Tiếp</p>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    {% endcomment %}
+    <img
+      id="imgphaiduoi"
+      src="https://tiendung352001.000webhostapp.com/web/img.png"
+    />
+    <center>
+      <h3 class="p-3 mb-2 bg-primary text-white" style="font-size: 50px">
+        Sending Email!!
+      </h3>
+    </center>
+
+    <form method="POST" class="post-form">
+      {% csrf_token %}
+      <fieldset class="form">
+        <div id="div1">
+          <h1>Trân Trọng Kính Mời Quý Khách</h1>
+          {% comment %} <div class="form-group">{{ form.name }}</div> {% endcomment %}
+          <div class="input_form">{{ form.name }}</div>
+          <p>Đến dự bữa tiệc thân mật chung vui cùng gia đình chúng tôi</p>
+          <label>Email người nhận :</label>
+          <div class="input_form">{{form.email}}</div>
+          <br />
+          <input
+            class="input_form"
+            id="tenchure"
+            type="text"
+            placeholder="Chú rể"
+          />
+          <p>
+            <img
+              id="imgg"
+              src="https://tiendung352001.000webhostapp.com/web/love%20text.png"
+            />
+          </p>
+          <input
+            class="input_form"
+            id="tencodau"
+            type="text"
+            placeholder="Cô dâu"
+          /><br />
+          <label>Được tổ chức vào hồi :</label>
+          <input class="input_form_time" name="thoigian" type="text" /><br />
+          <label>Ngày</label>
+          <input class="input_form_time" name="ngay" type="text" />
+          <label>Tháng</label>
+          <input class="input_form_time" name="thang" type="text" />
+          <label>Năm</label>
+          <input class="input_form_time" name="nam" type="text" /><br />
+          <label>Tại :</label>
+          <input class="input_form" name="diadiem" type="text" />
+          <p id="hhdt">
+            Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi!
+          </p>
+
+          <div id="Nha_trai">
+            <center>Nhà Trai</center>
+            <label>Ông:</label>
+            <input class="input_form" name="tenbachure" type="text" /><br />
+            <label>Bà: </label>
+            <input class="input_form" name="tenbachure" type="text" /><br />
+            <center>
+              <label> Chú rể</label> <br />
+              <input
+                class="input_form"
+                id="ten"
+                type="text"
+                placeholder="Chú rể"
+              />
+            </center>
+            <label>Đ/c: </label>
+            <input class="input_form" name="tenchure" type="text" />
+          </div>
+          <div id="Nha_gai">
+            <center>Nhà Gái</center>
+
+            <label>Ông :</label>
+            <input class="input_form" name="tenbacodau" type="text" /><br />
+            <label>Bà :</label>
+            <input class="input_form" name="tenmecodau" type="text" /> <br />
+            <center>
+              <label> Cô dâu</label> <br />
+              <input
+                class="input_form"
+                id="ten"
+                type="text"
+                placeholder="Cô dâu"
+              />
+            </center>
+            <label>Đ/c: </label>
+            <input class="input_form" name="tenchure" type="text" />
+            <p></p>
+          </div>
+        </div>
+        <div id="div2">
+          <br />
+          <img
+            id="img"
+            src="https://tiendung352001.000webhostapp.com/web/wedding.png"
+          /><br />
+          <img
+            id="img2"
+            src="https://tiendung352001.000webhostapp.com/web/alo.jpg"
+          />
+          <div id="div22">
+            <h1 style="font-size: 30px">Lễ Thành Hôn</h1>
+            <label>Được tổ chức vào hồi :</label>
+            <div class="form-group">{{form.time}}</div>
+            <br />
+            <label>Thứ</label>
+            <input class="input_form_time" name="thu" type="text" />
+            <label>Ngày</label><div class="form-group">{{form.day}}</div>
+            <label>Tháng</label>
+            <div class="form-group">{{form.month}}</div>
+            <label>Năm</label>
+            <div class="form-group">{{form.year}}</div>
+            <br />
+            <label>Tại :</label><br />
+            <div class="form-group">{{form.address}}</div>
+            <p id="hhdt">Rất Hân Hạnh Được Đón Tiếp</p>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <p>
+          <center><h3>{{ form.as_p }}</h3></center>
+        </p>
+
+        <center>
+          <input
+            id="submit"
+            name="Subscribe"
+            type="submit"
+            value="Gửi"
+            class="btn btn-primary btn-lg"
+          />
+        </center>
+      </div>
+    </form>
+  </body>
+</html>

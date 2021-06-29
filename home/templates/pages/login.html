@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../static/css/login_register.css">
+    <title>Login</title>
+</head>
+<body>
+
+
+     <div class="container">
+        <legend>Đăng nhập</legend>
+            <form class="form" method="POST" action ="">
+                {% csrf_token %}
+                {% for key, value in form.errors.items %}
+                    {{value}}
+                {% endfor %}
+                {% load static %}
+
+                <div class="input-field">
+                    {{form.username }}
+                    <label>Email or Username</label>
+                </div>
+                <div class="input-field">
+                    {{form.password}}
+                    <span class="show">SHOW</span>
+                     <label>Password</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="remember" > Remember me
+                </div>
+                <div class="button">
+                    <div class="inner">
+                    </div>
+                    <button type="submit" name='next' value="/" class="btn">Đăng Nhập</button>
+                </div>
+
+            </form>
+             <div class="signup">
+                    Not a member? <a href="../register">Signup now</a>
+             </div>
+     </div>
+</body>
+</html>

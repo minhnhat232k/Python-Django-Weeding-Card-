@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+
+
+body{
+    background: linear-gradient(rgba(248, 200, 200, 0.5), rgba(245, 222, 222, 0.5)),url(../../static/image/hinhnen.jpg);
+    /* filter: brightness(50%); */
+    background-repeat: no-repeat;
+    background-size: 100% 91%;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+.row, .row1{
+    display: flex;
+    text-align: center;
+}
+.column{
+    flex: 50;
+    border: 5px groove rgb(232, 179, 243);
+    margin: 10px;
+    height: 700px;
+    padding-bottom: 5px;
+    background: rgba(248, 223, 223, 0.25);
+}
+.column1{
+    flex: 50;
+}
+
+.input_form, .input_form_time{
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    border-style: none;
+    outline-style: none;
+    border-bottom: 2px inset rgb(73, 189, 243);
+    background: none;
+    color: maroon;
+}
+label{
+    font-family: "Original Surfer";
+
+}
+.input_form_time{
+    width: 75px;
+}
+input[name="tenkhach"]{
+    width: 320px;
+}
+#tencodau, #tenchure{
+    width: 200px;
+    font-family: Sail;
+    color: #f72424;
+
+}
+input[name="diadiem"]{
+    width: 350px;
+}
+#tim{
+    height: 80px;
+    width: 120px;
+
+}
+#wd{
+    height: 350px;
+    width: 500px;
+}
+#submit{
+    font-family: "Freckle Face";
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(250, 26, 112);
+
+}
+#submit:hover{
+    background: linear-gradient(to right, #f30d47, #fd7ce1c5);
+}
+#cottrai{
+    font-size: 25px;
+}
+#hhdt{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    color: rgb(212, 12, 12);
+}
+#ttkm{
+    font-family: 'Kaushan Script', cursive;
+    color: #860525;
+}
+#ddbt{
+    font-family: 'Playball', cursive;
+    font-size: 25px;
+    color: rgb(6, 4, 112);
+}

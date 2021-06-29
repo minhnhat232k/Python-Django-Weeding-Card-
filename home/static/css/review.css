@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+.content_review{
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-size: 35px;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgb(247, 62, 71);
+}
+.content_review::after{
+    content: '';
+    background: #6e6a6a;
+    width: 100px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.container_slider {
+    padding: 0;
+    margin-top: -35px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-image: url(../../static/images/nhan.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide-container {
+    width: 100%;
+    height: 85vh;
+    align-items: center;
+    overflow: hidden;
+}
+.image-slider {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+.slides-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+.img {
+    position: relative;
+    width: 240px;
+    height: 370px;
+    transition: .5s;
+    filter: drop-shadow(8px 8px 10px rgb(248, 190, 190));
+
+}
+
+.button {
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: .5s;
+}
+
+.button:hover {
+    background-color: rgba(250, 212, 212, 0.486);
+}
+
+#slider-span1:target ~ .image-slider #img1, #slider-span1:target ~ .image-slider #button-1 {
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+}
+
+#slider-span2:target ~ .image-slider #img2, #slider-span2:target ~ .image-slider #button-2 {
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+}
+
+#slider-span3:target ~ .image-slider #img3, #slider-span3:target ~ .image-slider #button-3 {
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+}
+
+#slider-span4:target ~ .image-slider #img4, #slider-span4:target ~ .image-slider #button-4 {
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+}
+
+#slider-span5:target ~ .image-slider #img5, #slider-span5:target ~ .image-slider #button-5 {
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+}
+
+#slider-span6:target ~ .image-slider #img6, #slider-span6:target ~ .image-slider #button-6 {
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+}
+
+#slider-span7:target ~ .image-slider #img7, #slider-span7:target ~ .image-slider #button-7 {
+    width: 700px;
+    height: 400px;
+    background-color: transparent;
+}
+
+/* img position */
+#slider-span1:target ~ .image-slider {
+    left: 70%;
+}
+
+#slider-span2:target ~ .image-slider {
+    left: 50%;
+}
+
+#slider-span3:target ~ .image-slider {
+    left: 25%;
+}
+
+#slider-span5:target ~ .image-slider {
+    left: -25%;
+}
+
+#slider-span6:target ~ .image-slider {
+    left: -50%;
+}
+
+#slider-span7:target ~ .image-slider {
+    left: -70%;
+}
